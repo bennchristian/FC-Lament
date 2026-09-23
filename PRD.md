@@ -52,7 +52,18 @@ The adjacent personas guide later research and safety checks. They do not expand
   - **Isolation** cluster: lonely, disconnected, unseen.
   - Plus "Something else".
   - The earlier mockup's five-screen version (See → Recognize → Name → Understand → Encounter) is retired.
-- **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. One pathway per cluster (Deb).
+- **Choose who to meet (S06; decided Sept 23):** Esther picks the biblical person herself. KNOWN never picks for her.
+  - Transition words show Ruth and Nehemiah.
+  - Isolation words show David and Hagar.
+  - Words from both clusters, or "Something else", show all four.
+- **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. There are four pathways, two per cluster (Deb):
+
+| Cluster | Pathway | Passage |
+|---|---|---|
+| Transition | Ruth leaving Moab | Ruth 1:6–22 |
+| Transition | Nehemiah, safe somewhere else and distressed about home | Nehemiah 1:1–11 |
+| Isolation | David in the cave | Psalm 142 |
+| Isolation | Hagar | Genesis 16:1–14 |
 - **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now.
   - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
 - **Leaving:** a ✕ close control on every in-flow screen opens the Unfinished moment sheet. It is an in-app sheet, not a notification.
@@ -64,9 +75,16 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Closing state:** no streak, pressure, scheduling or history.
 
 **Content**
-- Two researched Scripture pathways (owner: Deb), one per cluster above.
+- Four researched Scripture pathways, two per cluster (owner: Deb; research delivered Sept 23).
 - For each pathway, the research names which cluster words the passage genuinely supports, explains the biblical context, and flags words that should not be connected to that passage.
-- Until they land, the prototype shows bracketed placeholders; no Scripture is filled in by anyone else.
+- Scripture text is only what Deb chose. No one else adds or paraphrases passages.
+
+**Research flags to resolve (Sept 23)**
+- TODO(Deb/Dorcas): *Homesick* is rated only **indirect** for both Transition passages. Keep it, reword it, or find a stronger passage.
+- TODO(Deb/Dorcas): Nehemiah's strongest fits are not S05 words, although they match Esther's storyboard: concern for people back home, and feeling helpless at a distance. Consider adding a word.
+- TODO(Deb): pick one translation. Ruth uses ESV; the other three quotes match the NIV. The final build pulls text from YouVersion Platform.
+- TODO(Deb): the Hagar research cites Genesis 16:7 for the address that appears in 16:8. The text's speaker there is "the angel of the LORD"; get a pastor's check on the wording "God addresses her".
+- TODO(Deb): review the drafted wording, marked DRAFT in Figma: the S08 headlines and S12 prayer directions for Nehemiah, David and Hagar.
 
 ## 6. Out of scope — what KNOWN is not
 

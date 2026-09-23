@@ -37,14 +37,17 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 | `recognizeChoices[]` | Nuanced options. "Something else" is always appended by the client |
 | `prayerDirection` | Pray about it copy. Must not claim to know how she feels |
 
-| Pathway | Cluster | Words that route to it |
-|---|---|---|
-| A | Transition | bittersweet, homesick, uncertain |
-| B | Isolation | lonely, disconnected, unseen |
+| `pathwayId` | Cluster | Passage | Deb's strongest fits | Weak fits (flagged) |
+|---|---|---|---|---|
+| `ruth` | Transition | Ruth 1:6–22 | uncertain (strong), bittersweet (moderate–strong) | homesick (indirect) |
+| `nehemiah` | Transition | Nehemiah 1:1–11 | concern for people back home (very strong), helpless at a distance (strong) | homesick (indirect) |
+| `david` | Isolation | Psalm 142 | unseen (very strong), lonely (strong) | disconnected (moderate) |
+| `hagar` | Isolation | Genesis 16:1–14 | unseen (very strong), lonely (strong, with nuance) | disconnected (moderate) |
 
-TODO(Deb): the two pathways' content, including which cluster words each passage genuinely supports and which words it should not be connected to.
-
-TODO(Dorcas/Deb): routing for mixed-cluster selections and for "Something else" only.
+**Routing:**
+- Word → cluster (S05) → people shown on S06 → Esther picks the `pathwayId`.
+- Words from both clusters, or "Something else", show all four people. TODO(Dorcas/Deb): confirm.
+- If a coded build keeps the `UnfinishedMoment` record, `pathwayId` is set only once she has picked a person on S06.
 
 ## Off-store state
 
