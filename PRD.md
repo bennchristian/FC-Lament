@@ -47,15 +47,20 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Community introduction:** a QR code or link opens "How are you using KNOWN right now?" with two answers, *With someone I trust* / *On my own*. Choosing the first shows one guided-use orientation screen.
 
 **Core experience**
-- **Emotional processing (one screen, S05; decided Sept 23):** Esther deliberately *selects* the words that feel close. Her selection routes her to one of two Scripture pathways:
-  - **Transition** cluster: bittersweet, homesick, uncertain.
-  - **Isolation** cluster: lonely, disconnected, unseen.
-  - Plus "Something else".
-  - The earlier mockup's five-screen version (See → Recognize → Name → Understand → Encounter) is retired.
-- **Choose who to meet (S06; decided Sept 23):** Esther picks the biblical person herself. KNOWN never picks for her.
-  - Transition words show Ruth and Nehemiah.
-  - Isolation words show David and Hagar.
-  - Words from both clusters, or "Something else", show all four.
+- **Emotional processing on the emotions wheel: two taps (decided Sept 23).** She picks both steps; KNOWN never reads her writing or infers emotion.
+
+| Step | What she sees | Her choice |
+|---|---|---|
+| S05a | Five images, one per core emotion | Sad, Fearful, Angry, Happy or Disgusted |
+| S05b | The five ring-2 words for that core, each with a short definition | One of 25 feelings |
+
+  - **S05n, "Name it another way":** a sheet for when none of the words fit. What she types is never read or used to route.
+  - **Where she lands:** feelings go to Scripture through the feelings map in `SCHEMA.md`. Feelings with no passage yet go to **S05p, "Pathway coming"**.
+  - **Retired:**
+    - the third ring (S05c, retired because it added too many taps)
+    - the six-word S05
+    - the earlier mockup's five-screen See → Encounter flow
+- **Choose who to meet (S06):** Esther picks the biblical person herself, from the people matched to her feeling, or from all four after S05n or S05p. KNOWN never picks for her.
 - **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. There are four pathways, two per cluster (Deb):
 
 | Cluster | Pathway | Passage |
@@ -64,6 +69,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 | Transition | Nehemiah, safe somewhere else and distressed about home | Nehemiah 1:1–11 |
 | Isolation | David in the cave | Psalm 142 |
 | Isolation | Hagar | Genesis 16:1–14 |
+
 - **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now.
   - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
 - **Leaving:** a ✕ close control on every in-flow screen opens the Unfinished moment sheet. It is an in-app sheet, not a notification.
@@ -80,8 +86,11 @@ The adjacent personas guide later research and safety checks. They do not expand
 - Scripture text is only what Deb chose. No one else adds or paraphrases passages.
 
 **Research flags to resolve (Sept 23)**
-- TODO(Deb/Dorcas): *Homesick* is rated only **indirect** for both Transition passages. Keep it, reword it, or find a stronger passage.
-- TODO(Deb/Dorcas): Nehemiah's strongest fits are not S05 words, although they match Esther's storyboard: concern for people back home, and feeling helpless at a distance. Consider adding a word.
+- TODO(Ben/Deb): the emotions wheel has no *uncertain*, *bittersweet* or *homesick*. These are Ruth's strongest fits and the heart of Esther's storyboard. Ruth is reachable today only through "All four". Decide whether to add them to the wheel.
+- TODO(Deb): confirm the four **suggested** mappings: Weak, Rejected, Vulnerable, Distant.
+- TODO(Deb): research passages for the 18 placeholder feelings, or decide which branches stay out of scope.
+- TODO(Dorcas): review the 25 definitions on S05b, which are drafts written by Claude. Confirm the image-to-emotion pairing (the desk image is Angry). Supply art for Disgusted.
+- TODO(Kezia): review before testing: Despair, Vulnerable, Threatened, Rejected, Humiliated.
 - TODO(Deb): pick one translation. Ruth uses ESV; the other three quotes match the NIV. The final build pulls text from YouVersion Platform.
 - TODO(Deb): the Hagar research cites Genesis 16:7 for the address that appears in 16:8. The text's speaker there is "the angel of the LORD"; get a pastor's check on the wording "God addresses her".
 - TODO(Deb): review the drafted wording, marked DRAFT in Figma: the S08 headlines and S12 prayer directions for Nehemiah, David and Hagar.

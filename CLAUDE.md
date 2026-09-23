@@ -37,6 +37,7 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **The Figma prototype can't remember where she stopped.** "Continue where I left off" always resumes at Ruth's S07, so don't read that as a bug. The one thing it does track is her S06 choice, in the prototype variable `pathway`.
 - **Figma conditionals keep only if/else, and they can't be nested.** Multi-way routing ("Back to Respond") is four separate single-block CONDITIONAL actions chained in one reaction.
 - **Cloning a lane copies Deb's illustration images and any deleted instance children.** Run `resetOverrides()` on the Illustration instance, then set the caption again.
+- **A .webp uploaded as an image fill didn't render.** Convert it to PNG before `upload_assets`.
 - **The flow lines on the journey page are a locked vector group** ("Flow lines…"). If you move screens, redraw them; they don't follow frames.
 
 ## 4. Working with Ben

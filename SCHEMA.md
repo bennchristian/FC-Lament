@@ -44,10 +44,32 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 | `david` | Isolation | Psalm 142 | unseen (very strong), lonely (strong) | disconnected (moderate) |
 | `hagar` | Isolation | Genesis 16:1–14 | unseen (very strong), lonely (strong, with nuance) | disconnected (moderate) |
 
-**Routing:**
-- Word → cluster (S05) → people shown on S06 → Esther picks the `pathwayId`.
-- Words from both clusters, or "Something else", show all four people. TODO(Dorcas/Deb): confirm.
+**Routing:** image (S05a) → feeling (S05b, ring 2) → the people for that feeling on S06 → Esther picks the `pathwayId`.
 - If a coded build keeps the `UnfinishedMoment` record, `pathwayId` is set only once she has picked a person on S06.
+
+### Feelings map (emotions wheel → pathway)
+
+Only 7 of the 25 feelings have a pathway so far.
+
+| Core › feeling | S06 shows | Status | Basis in Deb's research |
+|---|---|---|---|
+| Sad › Lonely | David, Hagar | mapped | lonely: strong for both |
+| Sad › Despair | Nehemiah | mapped | helpless at a distance: strong |
+| Fearful › Anxious | Nehemiah | mapped | concern for people back home: very strong |
+| Fearful › Weak | David, Hagar | suggested | unseen / "no one notices" |
+| Fearful › Rejected | Hagar | suggested | alienated from the household |
+| Sad › Vulnerable | Hagar | suggested | mistreated, vulnerable |
+| Angry › Distant | David, Hagar | suggested | disconnected: moderate |
+| The other 18 | S05p "Pathway coming" → All four | placeholder | — |
+
+**Statuses:**
+- **mapped:** Deb's fit table supports it.
+- **suggested:** Claude's reading of her story notes. TODO(Deb): confirm.
+- **placeholder:** TODO(Deb): research a passage.
+
+The full 25-row list, with draft definitions, is in Figma: the "Feelings map" card and the S05b screens. The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
+
+Ruth has no ring-3 feeling of her own. See PRD §5, research flags.
 
 ## Off-store state
 

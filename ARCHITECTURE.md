@@ -31,10 +31,10 @@ There is **no backend, no account system and no analytics** in the prototype.
 Entry (ad link | community QR/link)
   → [launch] unfinished moment on device? ── yes → Welcome back → continue | start new (deletes it)
   → Independent entry  |  Community entry choice → (with someone) Guided orientation
-  → S05 Name what you're carrying → user SELECTS words → cluster
-       (Transition: bittersweet/homesick/uncertain · Isolation: lonely/disconnected/unseen)
-  → S06 Choose who to meet → user PICKS a person → pathwayId
-       (Transition: Ruth | Nehemiah · Isolation: David | Hagar · both/something else: all four)
+  → S05a image (core emotion) → S05b feeling (ring 2)   [user SELECTS both; two taps]
+       none fit → S05n "Name it another way" (text never read) → S06 All four
+       no passage yet → S05p "Pathway coming" → S06 All four | S18
+  → S06 Choose who to meet (people mapped to that feeling) → user PICKS a person → pathwayId
   → Meet → Enter the Story → Scripture (YouVersion text) → Recognize → Respond
   → Pray | Sit | Reflect (in-memory only) | Share (OS share sheet) | Done → Closing
 Exit at any step → Unfinished moment → save {step, pathwayId} | end without saving
@@ -42,7 +42,7 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
 
 ## 4. Key design decisions
 
-1. **Routing is by the user's selection, never by inference.** A fixed, human-authored table maps each word to a cluster. The cluster decides which people S06 shows, and Esther picks the pathway herself. Free text never influences routing.
+1. **Routing is by the user's selection, never by inference.** A fixed, human-authored feelings map (`SCHEMA.md`) links each of the 25 feelings to the people S06 shows, and Esther picks the pathway herself. Free text never influences routing.
 2. **No model interprets Scripture.** If an LLM is ever used, it may not choose passages, paraphrase them, or produce interpretation presented as Scripture.
 3. **The guide is outside the system.** No guide identity, session count or schedule is stored. Any guide dashboard is out of scope (`PRD.md` §6).
 4. **Minimum retention.** Only the step and the pathway id persist, only on the device, and starting a new moment clears them.
@@ -56,8 +56,9 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
 
 - TODO(team): stack for the coded prototype, if there is one.
 - TODO(team): YouVersion Platform API access, translation choice, licensing terms.
-- TODO(Dorcas/Deb): confirm that words from both clusters, or only "Something else", should show all four people. The prototype does this now.
+- TODO(Deb): the feelings map covers 7 of 25. Confirm the suggested rows and fill in the placeholders.
 - **Prototype limits:**
   - "Continue where I left off" always resumes at Ruth's S07; the real build resumes at the saved step.
   - The prototype stores her S06 choice in a Figma variable `pathway`, so "Back to Respond" on the shared screens returns to her own S11.
-  - On S05 she can switch between word groups but can't combine them.
+  - A second prototype variable, `feeling`, holds her S05b choice so S05p can show it back to her.
+  - In the prototype, tapping a card moves straight to the next step. The mockup's radio-plus-Continue would need about 30 extra state frames. A coded build can use radio plus Continue.
