@@ -52,7 +52,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 | Step | What she sees | Her choice |
 |---|---|---|
 | S05a | Four images, one per emotion (no Disgust). The team's illustrator is making the art. | Fear, Anger, Sadness or Enjoyment |
-| S05b | Five or six feelings for that emotion, each with a short definition. The words come from the earlier wheel's second ring, plus Overwhelmed (Fear) and Disconnected (Sadness). | One of 22 feelings |
+| S05b | Six feelings for that emotion, each with a short definition. They come from the Atlas of Emotions states, plus Overwhelmed and Uncertain (Fear), Lonely, Disconnected and Homesick (Sadness), and Bittersweet (Enjoyment). | One of 24 feelings |
 
   - **S05n, "Name it another way":** a sheet for when none of the words fit. What she types is never read or used to route.
   - **Where she lands:** feelings go to Scripture through the feelings map in `SCHEMA.md`. Feelings with no passage yet go to **S05p, "Pathway coming"**.
@@ -62,6 +62,7 @@ The adjacent personas guide later research and safety checks. They do not expand
     - the six-word S05
     - the earlier mockup's five-screen See → Encounter flow
 - **Choose who to meet (S06):** Esther picks the biblical person herself, from the people matched to her feeling, or from all four after S05n or S05p. KNOWN never picks for her.
+- **First-person voice (decided Sept 23):** on S06–S09, each biblical person speaks for themselves ("I stepped into a new life…"), for relatability. Quoted Scripture stays word for word, in quotation marks, with references.
 - **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. There are four pathways, two per cluster (Deb):
 
 | Cluster | Pathway | Passage |
@@ -87,12 +88,13 @@ The adjacent personas guide later research and safety checks. They do not expand
 - Scripture text is only what Deb chose. No one else adds or paraphrases passages.
 
 **Research flags to resolve (Sept 23)**
-- TODO(Ben/Deb): the feeling list still has no *uncertain*, *bittersweet* or *homesick*. These are Ruth's strongest fits and the heart of Esther's storyboard. Ruth is reachable today only through "All four". Decide whether to add them to the wheel.
-- TODO(Deb): confirm the four **suggested** mappings: Weak, Rejected, Vulnerable, Distant.
-- TODO(Deb): research passages for the 14 placeholder feelings, or decide which stay out of scope.
-- TODO(Dorcas): review the 22 definitions on S05b, which are drafts written by Claude.
+- TODO(Deb): *Homesick* now routes to Ruth, but Deb rates it only an **indirect** fit. Keep it, reword it, or find a stronger passage.
+- TODO(Deb): confirm the **suggested** mapping Grief → Nehemiah.
+- TODO(Deb): research passages for the 16 placeholder feelings, including all of Anger and Enjoyment, or decide which stay out of scope.
+- TODO(Deb/pastor): review the first-person retellings on S06–S09. They put words in each person's mouth, so they must stay clearly distinct from quoted Scripture.
+- TODO(Dorcas): review the 24 definitions on S05b, which are drafts written by Claude. *Lonely* is kept although it isn't an Atlas state.
 - TODO(illustrator): four S05a images (Fear, Anger, Sadness, Enjoyment) in the house style.
-- TODO(Kezia): review before testing: Despair, Vulnerable, Threatened, Rejected, Humiliated, Overwhelmed.
+- TODO(Kezia): review before testing: Panicked, Dread, Helpless, Vengeful, Overwhelmed.
 - TODO(Deb): pick one translation. Ruth uses ESV; the other three quotes match the NIV. The final build pulls text from YouVersion Platform.
 - TODO(Deb): the Hagar research cites Genesis 16:7 for the address that appears in 16:8. The text's speaker there is "the angel of the LORD"; get a pastor's check on the wording "God addresses her".
 - TODO(Deb): review the drafted wording, marked DRAFT in Figma: the S08 headlines and S12 prayer directions for Nehemiah, David and Hagar.
@@ -105,7 +107,8 @@ The adjacent personas guide later research and safety checks. They do not expand
 - A social network, community monitoring tool or guide dashboard.
 - A system that automatically reads, analyzes or shares private reflections.
 - A scheduling tool for Esther and the person who introduced KNOWN.
-- **From the earlier v2 pitch deck and not in this MVP** (decision Sept 23): emotions wheel, Burmese-language picker, fellowship/IFI connector.
+- **From the earlier v2 pitch deck and not in this MVP** (decision Sept 23): emotions wheel, fellowship/IFI connector.
+- **Translation.** The prototype shows a **placeholder** language picker (S00L, opened from a pill on S01/S02) to signal that other languages are planned. Choosing a language changes nothing yet. TODO(team): translation scope, and YouVersion translations per language.
 - **"Scripture Find" free-text search** (earlier mockup, slide 06): matching Scripture to what she types conflicts with §7.
 - **Push notifications** of any kind.
 

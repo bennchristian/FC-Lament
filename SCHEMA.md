@@ -49,26 +49,26 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 
 ### Feelings map (emotions wheel → pathway)
 
-The four emotions come from Ekman's Atlas of Emotions, without Disgust. Only 8 of the 22 feelings have a pathway so far.
+The four emotions come from Ekman's Atlas of Emotions, without Disgust. The feelings are Atlas states, plus the additions marked +. Only 8 of the 24 feelings have a pathway so far.
 
 | Emotion | Feelings (S05b) |
 |---|---|
-| Fear | Anxious, Overwhelmed, Insecure, Weak, Rejected, Threatened |
-| Anger | Distant, Critical, Frustrated, Bitter, Humiliated |
-| Sadness | Hurt, Guilty, Despair, Vulnerable, Lonely, Disconnected |
-| Enjoyment | Optimistic, Peaceful, Proud, Excited, Powerful |
+| Fear | Nervous, Anxious, Dread, Panicked, +Overwhelmed, +Uncertain |
+| Anger | Annoyed, Frustrated, Exasperated, Bitter, Vengeful, Furious |
+| Sadness | Disappointed, Helpless, Grief, +Lonely, +Disconnected, +Homesick |
+| Enjoyment | Relieved, Peaceful, Joyful, Amazed, Excited, +Bittersweet |
 
 | Emotion › feeling | S06 shows | Status | Basis in Deb's research |
 |---|---|---|---|
+| Fear › Uncertain | Ruth | mapped | uncertain: strong |
+| Enjoyment › Bittersweet | Ruth | mapped | bittersweet: moderate–strong |
+| Sadness › Homesick | Ruth | mapped (indirect) | homesick: indirect (flagged) |
+| Fear › Anxious | Nehemiah | mapped | concern for people back home: very strong |
+| Sadness › Helpless | Nehemiah | mapped | helpless at a distance: strong |
+| Sadness › Grief | Nehemiah | suggested | he mourns (not in the fit table) |
 | Sadness › Lonely | David, Hagar | mapped | lonely: strong for both |
 | Sadness › Disconnected | David, Hagar | mapped | disconnected: moderate for both |
-| Sadness › Despair | Nehemiah | mapped | helpless at a distance: strong |
-| Fear › Anxious | Nehemiah | mapped | concern for people back home: very strong |
-| Fear › Weak | David, Hagar | suggested | unseen / "no one notices" |
-| Fear › Rejected | Hagar | suggested | alienated from the household |
-| Sadness › Vulnerable | Hagar | suggested | mistreated, vulnerable |
-| Anger › Distant | David, Hagar | suggested | close to disconnected |
-| The other 14 (including Overwhelmed) | S05p "Pathway coming" → All four | placeholder | — |
+| The other 16 | S05p "Pathway coming" → All four | placeholder | — |
 
 **Statuses:**
 - **mapped:** Deb's fit table supports it.
@@ -77,7 +77,7 @@ The four emotions come from Ekman's Atlas of Emotions, without Disgust. Only 8 o
 
 The full list, with draft definitions, is in Figma: the "Feelings map" card and the S05b screens. The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
 
-Ruth has no ring-3 feeling of her own. See PRD §5, research flags.
+See PRD §5, research flags.
 
 ## Off-store state
 
