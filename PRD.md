@@ -47,16 +47,17 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Community introduction:** a QR code or link opens "How are you using KNOWN right now?" with two answers, *With someone I trust* / *On my own*. Choosing the first shows one guided-use orientation screen.
 
 **Core experience**
-- **Emotional processing on the emotions wheel: two taps (decided Sept 23).** She picks both steps; KNOWN never reads her writing or infers emotion.
+- **Emotional processing: two taps on Ekman's Atlas of Emotions (decided Sept 23).** She picks both steps; KNOWN never reads her writing or infers emotion.
 
 | Step | What she sees | Her choice |
 |---|---|---|
-| S05a | Five images, one per core emotion | Sad, Fearful, Angry, Happy or Disgusted |
-| S05b | The five ring-2 words for that core, each with a short definition | One of 25 feelings |
+| S05a | Four images, one per emotion (no Disgust). The team's illustrator is making the art. | Fear, Anger, Sadness or Enjoyment |
+| S05b | Five or six feelings for that emotion, each with a short definition. The words come from the earlier wheel's second ring, plus Overwhelmed (Fear) and Disconnected (Sadness). | One of 22 feelings |
 
   - **S05n, "Name it another way":** a sheet for when none of the words fit. What she types is never read or used to route.
   - **Where she lands:** feelings go to Scripture through the feelings map in `SCHEMA.md`. Feelings with no passage yet go to **S05p, "Pathway coming"**.
   - **Retired:**
+    - the earlier emotions wheel's five cores, including Disgust
     - the third ring (S05c, retired because it added too many taps)
     - the six-word S05
     - the earlier mockup's five-screen See → Encounter flow
@@ -86,11 +87,12 @@ The adjacent personas guide later research and safety checks. They do not expand
 - Scripture text is only what Deb chose. No one else adds or paraphrases passages.
 
 **Research flags to resolve (Sept 23)**
-- TODO(Ben/Deb): the emotions wheel has no *uncertain*, *bittersweet* or *homesick*. These are Ruth's strongest fits and the heart of Esther's storyboard. Ruth is reachable today only through "All four". Decide whether to add them to the wheel.
+- TODO(Ben/Deb): the feeling list still has no *uncertain*, *bittersweet* or *homesick*. These are Ruth's strongest fits and the heart of Esther's storyboard. Ruth is reachable today only through "All four". Decide whether to add them to the wheel.
 - TODO(Deb): confirm the four **suggested** mappings: Weak, Rejected, Vulnerable, Distant.
-- TODO(Deb): research passages for the 18 placeholder feelings, or decide which branches stay out of scope.
-- TODO(Dorcas): review the 25 definitions on S05b, which are drafts written by Claude. Confirm the image-to-emotion pairing (the desk image is Angry). Supply art for Disgusted.
-- TODO(Kezia): review before testing: Despair, Vulnerable, Threatened, Rejected, Humiliated.
+- TODO(Deb): research passages for the 14 placeholder feelings, or decide which stay out of scope.
+- TODO(Dorcas): review the 22 definitions on S05b, which are drafts written by Claude.
+- TODO(illustrator): four S05a images (Fear, Anger, Sadness, Enjoyment) in the house style.
+- TODO(Kezia): review before testing: Despair, Vulnerable, Threatened, Rejected, Humiliated, Overwhelmed.
 - TODO(Deb): pick one translation. Ruth uses ESV; the other three quotes match the NIV. The final build pulls text from YouVersion Platform.
 - TODO(Deb): the Hagar research cites Genesis 16:7 for the address that appears in 16:8. The text's speaker there is "the angel of the LORD"; get a pastor's check on the wording "God addresses her".
 - TODO(Deb): review the drafted wording, marked DRAFT in Figma: the S08 headlines and S12 prayer directions for Nehemiah, David and Hagar.
