@@ -37,7 +37,14 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 | `recognizeChoices[]` | Nuanced options. "Something else" is always appended by the client |
 | `prayerDirection` | Pray about it copy. Must not claim to know how she feels |
 
-TODO(Deb): the two pathways' content. TODO(Dorcas/Deb): the selection → `pathwayId` mapping.
+| Pathway | Cluster | Words that route to it |
+|---|---|---|
+| A | Transition | bittersweet, homesick, uncertain |
+| B | Isolation | lonely, disconnected, unseen |
+
+TODO(Deb): the two pathways' content, including which cluster words each passage genuinely supports and which words it should not be connected to.
+
+TODO(Dorcas/Deb): routing for mixed-cluster selections and for "Something else" only.
 
 ## Off-store state
 

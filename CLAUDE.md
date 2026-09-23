@@ -33,6 +33,8 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **Read the SAT doc before designing anything.** A first sitemap built from the app name alone invented circles, memorials, a journal and profiles. `PRD.md` §6 rules out every one of them.
 - **`generate_diagram` only creates FigJam boards.** It cannot write into the Trauma-Group Design file.
 - **The Figma MCP's top-level page listing omitted a page** (User flow) that exists in the file. Look pages up by id or name before assuming one is missing.
+- **Overlay position is read-only in the Plugin API.** S18 is a full-screen scrim frame with the sheet pinned to the bottom, so the default centered overlay still reads as a bottom sheet.
+- **The Figma prototype can't hold state.** "Continue where I left off" always resumes at S07, so don't read that as a bug.
 
 ## 4. Working with Ben
 

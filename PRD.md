@@ -47,9 +47,15 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Community introduction:** a QR code or link opens "How are you using KNOWN right now?" with two answers, *With someone I trust* / *On my own*. Choosing the first shows one guided-use orientation screen.
 
 **Core experience**
-- **Emotional processing:** Esther pauses, expresses, and deliberately *selects* what she is feeling or carrying. Her selection routes her to a Scripture pathway.
-- **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond.
+- **Emotional processing (one screen, S05; decided Sept 23):** Esther deliberately *selects* the words that feel close. Her selection routes her to one of two Scripture pathways:
+  - **Transition** cluster: bittersweet, homesick, uncertain.
+  - **Isolation** cluster: lonely, disconnected, unseen.
+  - Plus "Something else".
+  - The earlier mockup's five-screen version (See → Recognize → Name → Understand → Encounter) is retired.
+- **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. One pathway per cluster (Deb).
 - **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now.
+  - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
+- **Leaving:** a ✕ close control on every in-flow screen opens the Unfinished moment sheet. It is an in-app sheet, not a notification.
 - **Share with someone:** an editable message sent through the device share sheet. Nothing is ever sent automatically.
 
 **States**
@@ -58,7 +64,9 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Closing state:** no streak, pressure, scheduling or history.
 
 **Content**
-- Two researched Scripture pathways (owner: Deb).
+- Two researched Scripture pathways (owner: Deb), one per cluster above.
+- For each pathway, the research names which cluster words the passage genuinely supports, explains the biblical context, and flags words that should not be connected to that passage.
+- Until they land, the prototype shows bracketed placeholders; no Scripture is filled in by anyone else.
 
 ## 6. Out of scope — what KNOWN is not
 
@@ -69,6 +77,8 @@ The adjacent personas guide later research and safety checks. They do not expand
 - A system that automatically reads, analyzes or shares private reflections.
 - A scheduling tool for Esther and the person who introduced KNOWN.
 - **From the earlier v2 pitch deck and not in this MVP** (decision Sept 23): emotions wheel, Burmese-language picker, fellowship/IFI connector.
+- **"Scripture Find" free-text search** (earlier mockup, slide 06): matching Scripture to what she types conflicts with §7.
+- **Push notifications** of any kind.
 
 ## 7. Technical requirements
 
@@ -120,5 +130,8 @@ The adjacent personas guide later research and safety checks. They do not expand
 
 ## 11. Working links
 
-- Figma: https://www.figma.com/design/aW0qb7r1f1bbORiKmXF6qI/Trauma-Group (pages: Sitemap, User flow, User journey (mockup))
+- Figma: https://www.figma.com/design/aW0qb7r1f1bbORiKmXF6qI/Trauma-Group
+  - Sitemap: `node-id=29-2`
+  - User flow: `node-id=31-2`
+  - User journey (clickable prototype): page `25:3`, flows "Esther — community-guided journey" and "On my own"
 - GitHub: TODO(Ben): add remote URL

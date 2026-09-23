@@ -31,7 +31,8 @@ There is **no backend, no account system and no analytics** in the prototype.
 Entry (ad link | community QR/link)
   → [launch] unfinished moment on device? ── yes → Welcome back → continue | start new (deletes it)
   → Independent entry  |  Community entry choice → (with someone) Guided orientation
-  → Emotional processing → user SELECTS feeling/carrying → pathwayId
+  → S05 Name what you're carrying → user SELECTS words → pathwayId
+       (Transition: bittersweet/homesick/uncertain · Isolation: lonely/disconnected/unseen)
   → Meet → Enter the Story → Scripture (YouVersion text) → Recognize → Respond
   → Pray | Sit | Reflect (in-memory only) | Share (OS share sheet) | Done → Closing
 Exit at any step → Unfinished moment → save {step, pathwayId} | end without saving
@@ -39,7 +40,7 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
 
 ## 4. Key design decisions
 
-1. **Routing is by the user's selection, never by inference.** The emotional-processing choice maps to a pathway through a fixed, human-authored table. Free text never influences routing.
+1. **Routing is by the user's selection, never by inference.** A fixed, human-authored table maps each word to a cluster, and each cluster to a pathway (Transition → pathway A, Isolation → pathway B). Free text never influences routing.
 2. **No model interprets Scripture.** If an LLM is ever used, it may not choose passages, paraphrase them, or produce interpretation presented as Scripture.
 3. **The guide is outside the system.** No guide identity, session count or schedule is stored. Any guide dashboard is out of scope (`PRD.md` §6).
 4. **Minimum retention.** Only the step and the pathway id persist, only on the device, and starting a new moment clears them.
@@ -53,4 +54,5 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
 
 - TODO(team): stack for the coded prototype, if there is one.
 - TODO(team): YouVersion Platform API access, translation choice, licensing terms.
-- TODO(Dorcas/Deb): how the emotional-processing selections map to the two pathways.
+- TODO(Dorcas/Deb): routing when she picks words from both clusters, or only "Something else".
+- **Prototype limit:** the Figma prototype cannot remember state. "Continue where I left off" always resumes at S07; the real build resumes at the saved step.
