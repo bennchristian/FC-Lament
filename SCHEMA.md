@@ -22,7 +22,7 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 - Written only when Esther chooses *Save this step for later*.
 - Deleted when she chooses *End without saving* or *Start a new moment*, or finishes the pathway.
 
-**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, or which story she left through "This doesn't fit me" (S09x).
+**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, which story she left through "This doesn't fit me" (S09x), her answer to "Does this connect with your moment?", whether she saved a prayer, or whether she took another story.
 
 ## Static content
 
@@ -35,7 +35,10 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 | `storyContext` | Enter the Story copy |
 | `passage` | Reference + translation. Text comes from YouVersion Platform, not copied into the bundle unless licensing allows. TODO(team) |
 | `recognizeChoices[]` | Nuanced options. "Something else" is always appended by the client |
-| `prayerDirection` | Pray about it copy. Must not claim to know how she feels |
+| `connectPrompts[]` | One tailored "Does this connect with your moment?" line per recognize choice, plus one for "Something else". DRAFT (Claude, for Dorcas) |
+| `connectResponses` | Four responses, keyed `yes` · `a-little` · `not-sure` · `not-really`. DRAFT |
+| `prayerDirection` | Pray about it copy. Must not claim to know how she feels. *Save this prayer* hands this text and `passage` reference to the OS share sheet |
+| `anotherAngle` | Optional second angle on the story for S19a. TODO(Deb); empty for now |
 
 | `pathwayId` | Cluster | Passage | Deb's strongest fits | Weak fits (flagged) |
 |---|---|---|---|---|

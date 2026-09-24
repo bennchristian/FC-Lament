@@ -41,7 +41,9 @@ Entry (ad link | community QR/link)
   → S06 Choose who to meet (people mapped to that feeling) → user PICKS a person → pathwayId
   → Meet → Enter the Story → Scripture (YouVersion text) → Recognize → Respond
        on Scripture: "This doesn't fit me" → S09x → S06 All four | S05a | S18   [nothing recorded]
-  → Pray | Sit | Reflect (in-memory only) | Share (OS share sheet) | Done → Closing
+       on Recognize: choice → "Does this connect with your moment?" → tap answer → response   [not recorded]
+  → Pray (Save this prayer → OS share sheet) | Sit | Reflect (in-memory only) | Share (OS share sheet) | Done → Closing
+  → Closing: once per moment, "another story" → S19 → S06 All four | S19a (placeholder) | close
 Exit at any step → Unfinished moment → save {step, pathwayId} | end without saving
 ```
 
@@ -66,4 +68,6 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
   - "Continue where I left off" always resumes at Ruth's S07; the real build resumes at the saved step.
   - The prototype stores her S06 choice in a Figma variable `pathway`, so "Back to Respond" on the shared screens returns to her own S11.
   - A second prototype variable, `feeling`, holds her S05b choice so S05p can show it back to her.
-  - In the prototype, tapping a card moves straight to the next step. The mockup's radio-plus-Continue would need about 30 extra state frames. A coded build can use radio plus Continue.
+  - In the prototype, tapping a card moves straight to the next step. The mockup's radio-plus-Continue would need about 30 extra state frames. A coded build can use radio plus Continue. The exception is S10: tapping a card reveals the connection prompt, and *Next →* moves on. The card itself doesn't show as selected.
+  - The S10 connection prompt runs on session variables: `connectPrompt` and `connectResponse` (text bound to them), and `connectShown`, `connectAnswered` and `connectNotReally` (visibility). *I'm ready →* on S09 resets them. Each S10 frame grows past 844px when the prompt is open, so the prototype scrolls.
+  - `offerAnother` hides S17's another-story link after one use. It resets only when the prototype restarts.

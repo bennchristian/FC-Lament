@@ -80,9 +80,13 @@ The adjacent personas guide later research and safety checks. They do not expand
 
 - **"This doesn't fit me" (S09x, added Sept 25):** S09 has a quiet link under *I'm ready →*. It opens a sheet before S10 asks her to reflect: *Meet someone else* (S06 · All four) · *Choose a different feeling* (S05a) · *Stop for now* (S18). Nothing is recorded about which story she left. The companion card's C07 guidance tells the companion to go back to Step 4 if this happens.
   - TODO(Dorcas): add S09x to the SAT doc, and review the voice of the S09x copy and the C07 line (both DRAFT in Figma).
+- **Connection to her moment (S10, added Sept 25):** when she taps what stood out, "Does this connect with your moment?" appears on the same screen, with a line tailored to her choice. She answers with a tap (*Yes · A little · I'm not sure · Not really*), and a short response appears for each answer. *Not really* also offers *Meet someone else* (S09x). Her answer isn't stored or used to route. The prompts and responses are on the "Connection copy (DRAFT)" cards in Figma, next to each pathway's Research card. C08 on the companion card now mentions the question.
+  - TODO(Dorcas): voice review of the connection copy (DRAFT).
+  - TODO(Deb): check that each "Yes" response ("[Person] carried something like this too") is fair to the passage.
 
-- **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now.
+- **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now. Each option's subline says what it opens (DRAFT, Sept 25).
   - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
+  - **Save this prayer (S12, added Sept 25):** a quiet link inside the prayer screen hands the prayer guide and passage reference to her phone's share sheet (OUT-7), so she saves it herself. It includes nothing she selected or wrote, and KNOWN keeps no copy.
 - **Leaving:** a ✕ close control on every in-flow screen opens the Unfinished moment sheet. It is an in-app sheet, not a notification.
 - **Share with someone:** an editable message sent through the device share sheet. Nothing is ever sent automatically.
 
@@ -90,6 +94,9 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Unfinished moment:** *Save this step for later* or *End without saving*.
 - **Welcome back:** *Continue where I left off* or *Start a new moment*.
 - **Closing state:** no streak, pressure, scheduling or history.
+- **Another story (S19/S19a, added Sept 25):** S17 has one quiet link, *If you'd like, there's another story*. It shows once per moment, only after she has finished responding, so it never interrupts the first encounter. S19 offers *Someone else in Scripture* (S06 · All four) or *Another angle on the story you read* (S19a). C10 on the companion card mentions it.
+  - TODO(Deb): S19a is a placeholder. Research a second angle for each pathway's story, if one fits, or drop the option.
+  - TODO(Dorcas): add S19, S12's save link and the S11 previews to the SAT doc, and review their voice.
 
 **Content**
 - Four researched Scripture pathways, two per cluster (owner: Deb; research delivered Sept 23).
@@ -130,6 +137,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **No text analysis**, emotion inference, or automatic Scripture matching from private writing.
 - **Scripture** is sourced from YouVersion Platform with translation and reference cited. TODO(team): confirm licensing and translation.
 - **Sharing** goes through the OS share sheet or contacts; KNOWN never sends.
+- **Saving a prayer** goes through the OS share sheet too. KNOWN keeps no copy and has no saved-prayers list.
 - **Safety copy:** any safety or crisis language is reviewed by Kezia before it enters the mockup.
 
 ## 8. Success metrics
@@ -157,7 +165,8 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(team): does Share with someone feel safe, optional and clear?
 - TODO(team): does the companion card help the trusted person accompany Esther without steering her answers?
 - TODO(team): does "This doesn't fit me" feel like permission rather than failure, and do testers find it on S09?
-- TODO(team): the companion mockup's Step 8 note says a follow-up appears on S10 after Esther taps an option. That isn't in §5. Confirm whether S10 has changed.
+- TODO(team): does "Does this connect with your moment?" feel like an invitation rather than a quiz?
+- TODO(team): does anyone use Another story, and does it feel like an offer rather than a feed?
 - TODO(team): do the faith-related hypotheses in Esther's empathy map reflect real users? Aaron's brief requires testing with real international students from Myanmar.
 
 ## 10. Deliverables and owners
