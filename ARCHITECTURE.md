@@ -31,11 +31,16 @@ There is **no backend, no account system and no analytics** in the prototype.
 Entry (ad link | community QR/link)
   → [launch] unfinished moment on device? ── yes → Welcome back → continue | start new (deletes it)
   → Independent entry  |  Community entry choice → (with someone) Guided orientation
+       optional, from S03: Esther shares a companion link via the OS share sheet (OUT-6a → OUT-6b → back to S03)
+         → companion's phone: static card C01–C10 (companion taps Next) → C11 closed
+           any step → C12 She wants to stop | C13 If you're worried (TODO Kezia)
+           [no data flows between the two phones]
   → S05a image (Ekman: fear | anger | sadness | enjoyment) → S05b feeling   [user SELECTS both; two taps]
        none fit → S05n "Name it another way" (text never read) → S06 All four
        no passage yet → S05p "Pathway coming" → S06 All four | S18
   → S06 Choose who to meet (people mapped to that feeling) → user PICKS a person → pathwayId
   → Meet → Enter the Story → Scripture (YouVersion text) → Recognize → Respond
+       on Scripture: "This doesn't fit me" → S09x → S06 All four | S05a | S18   [nothing recorded]
   → Pray | Sit | Reflect (in-memory only) | Share (OS share sheet) | Done → Closing
 Exit at any step → Unfinished moment → save {step, pathwayId} | end without saving
 ```
@@ -44,7 +49,7 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
 
 1. **Routing is by the user's selection, never by inference.** A fixed, human-authored feelings map (`SCHEMA.md`) links each of the 24 feelings to the people S06 shows, and Esther picks the pathway herself. Free text never influences routing.
 2. **No model interprets Scripture.** If an LLM is ever used, it may not choose passages, paraphrase them, or produce interpretation presented as Scripture.
-3. **The guide is outside the system.** No guide identity, session count or schedule is stored. Any guide dashboard is out of scope (`PRD.md` §6).
+3. **The guide is outside the system.** No guide identity, session count or schedule is stored. Any guide dashboard is out of scope (`PRD.md` §6). The companion card is static content on the companion's phone: it receives nothing from Esther's device and cannot know her step, so its copy has to work whatever she chooses.
 4. **Minimum retention.** Only the step and the pathway id persist, only on the device, and starting a new moment clears them.
 
 ## 5. Trust boundaries

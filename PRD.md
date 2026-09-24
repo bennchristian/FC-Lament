@@ -45,6 +45,12 @@ The adjacent personas guide later research and safety checks. They do not expand
 **Entry paths**
 - **Ad or shared promotion:** independent entry landing that explains KNOWN and lets her begin alone.
 - **Community introduction:** a QR code or link opens "How are you using KNOWN right now?" with two answers, *With someone I trust* / *On my own*. Choosing the first shows one guided-use orientation screen.
+- **Companion card (C01–C13, added Sept 25):** with someone, Esther can tap *Invite someone to accompany you* on S03 and send her trusted person a companion link through the OS share sheet (OUT-6a contacts, OUT-6b editable message, both simulated). After sending she returns to S03. It opens a static, ten-step card on that person's phone, one step per stage of her journey. Each step has one line they can say and one line of guidance. The companion taps Next themselves: the card receives nothing from Esther's phone and never shows what she selects or writes, so every line works whatever she chooses. Footer links: *She wants to stop* (C12) and *If you're worried about her* (C13, placeholder for Kezia).
+  - TODO(Dorcas): add the companion card to the SAT doc, which wins over this file.
+  - TODO(Dorcas): voice review of the companion copy (DRAFT in Figma), including the footer rewrite.
+  - TODO(Kezia): C13 copy, and a safety review of every companion line before testing.
+  - TODO(Dorcas): the invite message on OUT-6b is a Claude DRAFT ("Would you sit with me while I try KNOWN?…").
+  - TODO(team): the invite and card show names ("Invite Hannah", "Esther invited you"). A build needs a generic link without names (§7); the prototype keeps the persona names.
 
 **Core experience**
 - **Emotional processing: two taps on Ekman's Atlas of Emotions (decided Sept 23).** She picks both steps; KNOWN never reads her writing or infers emotion.
@@ -71,6 +77,9 @@ The adjacent personas guide later research and safety checks. They do not expand
 | Transition | Nehemiah, safe somewhere else and distressed about home | Nehemiah 1:1–11 |
 | Isolation | David in the cave | Psalm 142 |
 | Isolation | Hagar | Genesis 16:1–14 |
+
+- **"This doesn't fit me" (S09x, added Sept 25):** S09 has a quiet link under *I'm ready →*. It opens a sheet before S10 asks her to reflect: *Meet someone else* (S06 · All four) · *Choose a different feeling* (S05a) · *Stop for now* (S18). Nothing is recorded about which story she left. The companion card's C07 guidance tells the companion to go back to Step 4 if this happens.
+  - TODO(Dorcas): add S09x to the SAT doc, and review the voice of the S09x copy and the C07 line (both DRAFT in Figma).
 
 - **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now.
   - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
@@ -104,7 +113,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - A daily journaling app, mood tracker or streak-based devotional.
 - A therapy platform, diagnostic tool or replacement for professional mental health care.
 - A crisis response or emergency communication service.
-- A social network, community monitoring tool or guide dashboard.
+- A social network, community monitoring tool or guide dashboard. The companion card (§5) is not a dashboard: it is static and receives no data from Esther.
 - A system that automatically reads, analyzes or shares private reflections.
 - A scheduling tool for Esther and the person who introduced KNOWN.
 - **From the earlier v2 pitch deck and not in this MVP** (decision Sept 23): emotions wheel, fellowship/IFI connector.
@@ -115,6 +124,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 ## 7. Technical requirements
 
 - **No account** required, for Esther or for the trusted person.
+- **Companion card:** static content only. No backend, no link between the two phones, no account or identity for the companion.
 - **Device-local temporary state only:** the unfinished step, plus the pathway id needed to continue. See `SCHEMA.md`.
 - **No retention** of personally written text in the prototype.
 - **No text analysis**, emotion inference, or automatic Scripture matching from private writing.
@@ -145,6 +155,9 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(team): will users recognize when to open KNOWN in the moment?
 - TODO(team): does a trusted community introduction improve understanding and later recall?
 - TODO(team): does Share with someone feel safe, optional and clear?
+- TODO(team): does the companion card help the trusted person accompany Esther without steering her answers?
+- TODO(team): does "This doesn't fit me" feel like permission rather than failure, and do testers find it on S09?
+- TODO(team): the companion mockup's Step 8 note says a follow-up appears on S10 after Esther taps an option. That isn't in §5. Confirm whether S10 has changed.
 - TODO(team): do the faith-related hypotheses in Esther's empathy map reflect real users? Aaron's brief requires testing with real international students from Myanmar.
 
 ## 10. Deliverables and owners
@@ -165,5 +178,5 @@ The adjacent personas guide later research and safety checks. They do not expand
 - Figma: https://www.figma.com/design/aW0qb7r1f1bbORiKmXF6qI/Trauma-Group
   - Sitemap: `node-id=29-2`
   - User flow: `node-id=31-2`
-  - User journey (clickable prototype): page `25:3`, flows "Esther — community-guided journey" and "On my own"
+  - User journey (clickable prototype): page `25:3`, flows "Esther — community-guided journey", "On my own" and "Hannah — companion card" (C01–C13, the row at x=7000)
 - GitHub: TODO(Ben): add remote URL

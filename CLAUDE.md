@@ -20,7 +20,7 @@ Anything below that contradicts them is stale and should be fixed here, not ther
 
 ## 1. What this is
 
-FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo AI Hackathon. KNOWN is a private, in-the-moment Scripture experience for Esther, a displaced international Christian student. The flow is: name what she is carrying → meet a biblical person → read their words → recognize what resonates → choose a gentle response. It is currently in the design phase; the work lives in Figma, and there is no code yet.
+FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo AI Hackathon. KNOWN is a private, in-the-moment Scripture experience for Esther, a displaced international Christian student. The flow is: name what she is carrying → meet a biblical person → read their words → recognize what resonates → choose a gentle response. If she goes through it with someone, a static companion card (C01–C13) on that person's phone walks them through the same ten stages without ever seeing her choices. It is currently in the design phase; the work lives in Figma, and there is no code yet.
 
 ## 2. How to work on it
 
@@ -38,6 +38,11 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **Figma conditionals keep only if/else, and they can't be nested.** Multi-way routing ("Back to Respond") is four separate single-block CONDITIONAL actions chained in one reaction.
 - **Cloning a lane copies Deb's illustration images and any deleted instance children.** Run `resetOverrides()` on the Illustration instance, then set the caption again.
 - **A .webp uploaded as an image fill didn't render.** Convert it to PNG before `upload_assets`.
+- **Ben's newer mockup screenshots aren't in the Figma file.** Search before assuming a frame exists. The companion lane was built from scratch at x=7000. Esther's invite is an option on S03, not a separate choice screen like the mockup's, because S02 keeps the SAT copy.
+- **One prototype link crosses phones:** OUT-6b's "Prototype only: see what Hannah receives →" jumps to C01. Its Send goes back to S03, so Esther's own flow stays intact.
+- **Companion copy must work whatever Esther picks.** The card can't know her feeling or pathway. The mockups named David and Psalm 142 and assumed "lonely"; those were removed.
+- **Crimson Pro Italic has no ⚑ glyph.** It renders as nothing in `KNOWN/Placeholder` text, so put Kezia flags in a note card instead.
+- **The `plugin:figma` MCP server may ask for auth when the other Figma MCP server (`use_figma`) already works.** Check with ToolSearch before telling Ben the file is unreachable.
 - **The flow lines on the journey page are a locked vector group** ("Flow lines…"). If you move screens, redraw them; they don't follow frames.
 
 ## 4. Working with Ben

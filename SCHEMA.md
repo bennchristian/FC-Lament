@@ -22,7 +22,7 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 - Written only when Esther chooses *Save this step for later*.
 - Deleted when she chooses *End without saving* or *Start a new moment*, or finishes the pathway.
 
-**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts.
+**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, or which story she left through "This doesn't fit me" (S09x).
 
 ## Static content
 
@@ -78,6 +78,10 @@ The four emotions come from Ekman's Atlas of Emotions, without Disgust. The feel
 The full list, with draft definitions, is in Figma: the "Feelings map" card and the S05b screens. The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
 
 See PRD §5, research flags.
+
+### `CompanionCard` (static, read-only)
+
+Ten fixed steps (C01–C10), plus C11 closed, C12 She wants to stop and C13 If you're worried. Each step has `title`, `quote` (a line the companion can say) and `guidance`. No field depends on Esther's choices, and the card holds no state. Copy lives in Figma (DRAFT).
 
 ## Off-store state
 

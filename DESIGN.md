@@ -29,6 +29,10 @@ The existing system is **brown, cream and muted blue** (SAT doc).
 | `color/icon` | Line icons | `#644A3E` |
 | `color/border` | Hairlines | `#E6DDD3` |
 | `color/placeholder` | **Design-phase only:** marks content still owed by Deb | `#9A5B45` |
+| `color/primary-green` | Primary button on the companion card (C01–C12); also the selected "With someone" button in Ben's mockups | `#404F43` |
+| `color/rule-green` | Left rule on the companion card's quote block | `#8D9B89` |
+
+Both greens were sampled from Ben's companion-card mockups (Sept 25). TODO(Dorcas): decide whether green joins the whole palette or stays on the companion card, because the rest of KNOWN uses brown `color/primary`.
 
 "Muted blue" in the SAT doc shows up as the ink and body text colors, not as a fill.
 
