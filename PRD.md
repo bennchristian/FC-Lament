@@ -188,4 +188,4 @@ The adjacent personas guide later research and safety checks. They do not expand
   - Sitemap: `node-id=29-2`
   - User flow: `node-id=31-2`
   - User journey (clickable prototype): page `25:3`, flows "Esther — community-guided journey", "On my own" and "Hannah — companion card" (C01–C13, the row at x=7000)
-- GitHub: TODO(Ben): add remote URL
+- GitHub: https://github.com/bennchristian/FC-Lament
