@@ -71,7 +71,7 @@ Minimal. No celebratory animation, confetti or streak effects. Transitions shoul
 - Invitational rather than clinical, commanding or overly cheerful.
 - Clear about privacy, choice, and what the tool can and cannot do.
 - Never diagnose, never label a situation as a crisis, never promise a recipient will respond, never imply KNOWN monitors her.
-- **Biblical people speak in first person** on S06–S09 ("I stepped into a new life…"). KNOWN's own voice stays second person ("Meet Ruth in this moment", "Take a moment to read them again").
+- **Bible stories are told in the third person** on S06–S09 ("She stepped into a new life…"), so KNOWN never puts words in a biblical person's mouth. The only first-person lines from a biblical person are quoted Scripture. KNOWN's own voice stays second person ("Meet Ruth in this moment", "Take a moment to read them again").
 - **Quoted Scripture** stays word for word, in quotation marks, with references, so a retelling is never mistaken for Scripture.
 - **Recognize (S10)** options are Esther's own observations, so they keep "he" and "she" (e.g. "He tells God plainly that he feels alone").
 

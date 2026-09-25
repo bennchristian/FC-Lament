@@ -68,7 +68,7 @@ The adjacent personas guide later research and safety checks. They do not expand
     - the six-word S05
     - the earlier mockup's five-screen See → Encounter flow
 - **Choose who to meet (S06):** Esther picks the biblical person herself, from the people matched to her feeling, or from all four after S05n or S05p. KNOWN never picks for her.
-- **First-person voice (decided Sept 23):** on S06–S09, each biblical person speaks for themselves ("I stepped into a new life…"), for relatability. Quoted Scripture stays word for word, in quotation marks, with references.
+- **Third-person voice (changed Sept 25):** on S06–S09, KNOWN tells each person's story in the third person ("She stepped into a new life…"). The Sept 23 first-person voice was reverted so KNOWN never puts words in a biblical person's mouth. Quoted Scripture stays word for word, in quotation marks, with references.
 - **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. There are four pathways, two per cluster (Deb):
 
 | Cluster | Pathway | Passage |
@@ -107,7 +107,9 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(Deb): *Homesick* now routes to Ruth, but Deb rates it only an **indirect** fit. Keep it, reword it, or find a stronger passage.
 - TODO(Deb): confirm the **suggested** mapping Grief → Nehemiah.
 - TODO(Deb): research passages for the 16 placeholder feelings, including all of Anger and Enjoyment, or decide which stay out of scope.
-- TODO(Deb/pastor): review the first-person retellings on S06–S09. They put words in each person's mouth, so they must stay clearly distinct from quoted Scripture.
+- TODO(Deb/pastor): review the third-person retellings on S06–S09 (converted from first person Sept 25) against the passages. Only the voice changed; two lines were reworded:
+  - David's S06 card: "I know what it's like to look around and feel that no one is there" → "He looked around and felt that no one was there" (Psalm 142:4).
+  - David's S08: the invented line he "didn't say" ("I shouldn't feel lonely because God is with me") → "He didn't correct himself or tell himself he shouldn't feel lonely."
 - TODO(Dorcas): review the 24 definitions on S05b, which are drafts written by Claude. *Lonely* is kept although it isn't an Atlas state.
 - TODO(illustrator): four S05a images (Fear, Anger, Sadness, Enjoyment) in the house style.
 - TODO(Kezia): review before testing: Panicked, Dread, Helpless, Vengeful, Overwhelmed.
