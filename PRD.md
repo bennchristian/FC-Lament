@@ -47,27 +47,34 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Community introduction:** a QR code or link opens "How are you using KNOWN right now?" with two answers, *With someone I trust* / *On my own*. Choosing the first shows one guided-use orientation screen.
 - **Companion card (C01–C13, added Sept 25):** with someone, Esther can tap *Invite someone to accompany you* on S03 and send her trusted person a companion link through the OS share sheet (OUT-6a contacts, OUT-6b editable message, both simulated). After sending she returns to S03. It opens a static, ten-step card on that person's phone, one step per stage of her journey. Each step has one line they can say and one line of guidance. The companion taps Next themselves: the card receives nothing from Esther's phone and never shows what she selects or writes, so every line works whatever she chooses. Footer links: *She wants to stop* (C12) and *If you're worried about her* (C13, placeholder for Kezia).
   - TODO(Dorcas): add the companion card to the SAT doc, which wins over this file.
-  - TODO(Dorcas): voice review of the companion copy (DRAFT in Figma), including the footer rewrite.
+  - TODO(Dorcas): voice review of the companion copy (DRAFT in Figma), including the footer rewrite and the Sept 25 C02/C03 edits for multi-select ("one or two of the images", "Did anything there feel close?").
   - TODO(Kezia): C13 copy, and a safety review of every companion line before testing.
   - TODO(Dorcas): the invite message on OUT-6b is a Claude DRAFT ("Would you sit with me while I try KNOWN?…").
   - TODO(team): the invite and card show names ("Invite Hannah", "Esther invited you"). A build needs a generic link without names (§7); the prototype keeps the persona names.
 
 **Core experience**
-- **Emotional processing: two taps on Ekman's Atlas of Emotions (decided Sept 23).** She picks both steps; KNOWN never reads her writing or infers emotion.
+- **Emotional processing: two checkbox steps on Ekman's Atlas of Emotions (decided Sept 23; multi-select and no labels, Sept 25, Ben).** She picks both steps; KNOWN never reads her writing or infers emotion.
 
 | Step | What she sees | Her choice |
 |---|---|---|
-| S05a | Four images, one per emotion (no Disgust). The team's illustrator is making the art. | Fear, Anger, Sadness or Enjoyment |
-| S05b | Six feelings for that emotion, each with a short definition. They come from the Atlas of Emotions states, plus Overwhelmed and Uncertain (Fear), Lonely, Disconnected and Homesick (Sadness), and Bittersweet (Enjoyment). | One of 24 feelings |
+| S05a | Four unlabelled images, one per emotion (no Disgust), each with a checkbox, then *Continue →*. | One or two images (at most 2) |
+| S05b | One screen listing the six descriptions for each image she chose (6 or 12), with checkboxes and no group headings, then *Continue →*. The descriptions come from the Atlas of Emotions states, plus Overwhelmed and Uncertain (Fear), Lonely, Disconnected and Homesick (Sadness), and Bittersweet (Enjoyment). | Up to three descriptions |
 
-  - **S05n, "Name it another way":** a sheet for when none of the words fit. What she types is never read or used to route.
-  - **Where she lands:** feelings go to Scripture through the feelings map in `SCHEMA.md`. Feelings with no passage yet go to **S05p, "Pathway coming"**.
+  - **No labels (Sept 25):** she sees no emotion names and no feeling words, only the images and the first-person descriptions ("I don't know what will happen next."). She may agree with a description without wanting to be called "helpless" or "depressed". The feeling words remain as hidden tags for matching.
+  - **S05n, "Name it another way":** a sheet for when none of the descriptions fit. What she types is never read or used to route.
+  - **Where she lands:** her tags score each story through the feelings map in `SCHEMA.md`, and **S06 · Best matches** shows the best three. If none of her tags has a passage yet, she goes straight to **S06 · All four**. (S05p, "Pathway coming", was removed Sept 25.)
+  - Going back to S05a and pressing *Continue* again clears her S05b choices.
+  - TODO(Dorcas): add the multi-select, no-label change to the SAT doc.
+  - TODO(Kezia): review the descriptions for Dread, Panicked, Overwhelmed, Vengeful and Helpless, which were already flagged. Without the word beside them, the descriptions carry the whole meaning.
   - **Retired:**
     - the earlier emotions wheel's five cores, including Disgust
     - the third ring (S05c, retired because it added too many taps)
     - the six-word S05
     - the earlier mockup's five-screen See → Encounter flow
-- **Choose who to meet (S06):** Esther picks the biblical person herself, from the people matched to her feeling, or from all four after S05n or S05p. KNOWN never picks for her.
+    - single-choice S05a/S05b, the four per-image S05b screens and the per-feeling S06 screens (Sept 25)
+- **Choose who to meet (S06):** KNOWN ranks the stories by her tags and shows up to three best matches (ties stay in). She picks the biblical person herself. *Show me different stories* swaps to the stories not shown. After S05n, S09x, S19 or tags with no passage, she chooses from all four. KNOWN never picks the person for her.
+  - With four pathways, "a different set" is simply the other one or two stories. With a larger library it would be the next three by rank.
+  - TODO(Deb): the ranking weights come from your fit ratings (very strong 5, strong 4, moderate–strong 3, moderate 2, indirect or suggested 1). Confirm them, or give an order you prefer.
 - **Third-person voice (changed Sept 25):** on S06–S09, KNOWN tells each person's story in the third person ("She stepped into a new life…"). The Sept 23 first-person voice was reverted so KNOWN never puts words in a biblical person's mouth. Quoted Scripture stays word for word, in quotation marks, with references.
 - **Scripture pathway, five screens:** 1 Meet · 2 Enter the Story · 3 Scripture · 4 Recognize · 5 Respond. There are four pathways, two per cluster (Deb):
 
@@ -78,14 +85,18 @@ The adjacent personas guide later research and safety checks. They do not expand
 | Isolation | David in the cave | Psalm 142 |
 | Isolation | Hagar | Genesis 16:1–14 |
 
-- **"This doesn't fit me" (S09x, added Sept 25):** S09 has a quiet link under *I'm ready →*. It opens a sheet before S10 asks her to reflect: *Meet someone else* (S06 · All four) · *Choose a different feeling* (S05a) · *Stop for now* (S18). Nothing is recorded about which story she left. The companion card's C07 guidance tells the companion to go back to Step 4 if this happens.
+- **"This doesn't fit me" (S09x, added Sept 25):** S09 has a quiet link under *I'm ready →*. It opens a sheet before S10 asks her to reflect: *Meet someone else* (S06 · All four) · *Choose a different feeling* (S05a). *Stop for now* was removed Sept 25. Nothing is recorded about which story she left. The companion card's C07 guidance tells the companion to go back to Step 4 if this happens.
   - TODO(Dorcas): add S09x to the SAT doc, and review the voice of the S09x copy and the C07 line (both DRAFT in Figma).
 - **Connection to her moment (S10, added Sept 25):** when she taps what stood out, "Does this connect with your moment?" appears on the same screen, with a line tailored to her choice. She answers with a tap (*Yes · A little · I'm not sure · Not really*), and a short response appears for each answer. *Not really* also offers *Meet someone else* (S09x). Her answer isn't stored or used to route. The prompts and responses are on the "Connection copy (DRAFT)" cards in Figma, next to each pathway's Research card. C08 on the companion card now mentions the question.
   - TODO(Dorcas): voice review of the connection copy (DRAFT).
   - TODO(Deb): check that each "Yes" response ("[Person] carried something like this too") is fair to the passage.
 
-- **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone · Done for now. Each option's subline says what it opens (DRAFT, Sept 25).
-  - Pray, Sit and Reflect each offer **Back to Respond** or **Done for now**.
+- **Respond options:** Pray about it · Sit with it · Reflect a little more (limited-character field, not saved) · Share with someone. Each option's subline says what it opens (DRAFT, Sept 25).
+  - Pray, Sit and Reflect each offer **Back to Respond**.
+  - **No "Done for now" (removed Sept 25, Ben):** no screen offers "Done for now", "I'm done for now" or "Stop for now". To stop, she taps ✕ or leaves the app.
+    - The closing state (S17) and its another-story link now follow only a sent share.
+    - TODO(Ben): confirm that S17 should be reachable only after a share.
+    - TODO(Dorcas): the SAT doc still lists "Done for now" as a Respond option; update it.
   - **Save this prayer (S12, added Sept 25):** a quiet link inside the prayer screen hands the prayer guide and passage reference to her phone's share sheet (OUT-7), so she saves it herself. It includes nothing she selected or wrote, and KNOWN keeps no copy.
 - **Leaving:** a ✕ close control on every in-flow screen opens the Unfinished moment sheet. It is an in-app sheet, not a notification.
 - **Share with someone:** an editable message sent through the device share sheet. Nothing is ever sent automatically.
@@ -94,7 +105,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - **Unfinished moment:** *Save this step for later* or *End without saving*.
 - **Welcome back:** *Continue where I left off* or *Start a new moment*.
 - **Closing state:** no streak, pressure, scheduling or history.
-- **Another story (S19/S19a, added Sept 25):** S17 has one quiet link, *If you'd like, there's another story*. It shows once per moment, only after she has finished responding, so it never interrupts the first encounter. S19 offers *Someone else in Scripture* (S06 · All four) or *Another angle on the story you read* (S19a). C10 on the companion card mentions it.
+- **Another story (S19/S19a, added Sept 25):** S17 has one quiet link, *If you'd like, there's another story*. It shows once per moment on S17, which she reaches only after sending a share, so it never interrupts the first encounter. S19 offers *Someone else in Scripture* (S06 · All four) or *Another angle on the story you read* (S19a). C10 on the companion card mentions it.
   - TODO(Deb): S19a is a placeholder. Research a second angle for each pathway's story, if one fits, or drop the option.
   - TODO(Dorcas): add S19, S12's save link and the S11 previews to the SAT doc, and review their voice.
 
@@ -110,7 +121,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(Deb/pastor): review the third-person retellings on S06–S09 (converted from first person Sept 25) against the passages. Only the voice changed; two lines were reworded:
   - David's S06 card: "I know what it's like to look around and feel that no one is there" → "He looked around and felt that no one was there" (Psalm 142:4).
   - David's S08: the invented line he "didn't say" ("I shouldn't feel lonely because God is with me") → "He didn't correct himself or tell himself he shouldn't feel lonely."
-- TODO(Dorcas): review the 24 definitions on S05b, which are drafts written by Claude. *Lonely* is kept although it isn't an Atlas state.
+- TODO(Dorcas): review the 24 descriptions on S05b, which are drafts written by Claude. They now stand alone, with no feeling word beside them, so each must be clear by itself. *Lonely* is kept although it isn't an Atlas state.
 - TODO(illustrator): four S05a images (Fear, Anger, Sadness, Enjoyment) in the house style.
 - TODO(Kezia): review before testing: Panicked, Dread, Helpless, Vengeful, Overwhelmed.
 - TODO(Deb): pick one translation. Ruth uses ESV; the other three quotes match the NIV. The final build pulls text from YouVersion Platform.
@@ -166,6 +177,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(team): does a trusted community introduction improve understanding and later recall?
 - TODO(team): does Share with someone feel safe, optional and clear?
 - TODO(team): does the companion card help the trusted person accompany Esther without steering her answers?
+- TODO(team): do descriptions without feeling words feel less like a label, and are they still clear enough to choose from? Does picking up to three feel freeing or like more work?
 - TODO(team): does "This doesn't fit me" feel like permission rather than failure, and do testers find it on S09?
 - TODO(team): does "Does this connect with your moment?" feel like an invitation rather than a quiz?
 - TODO(team): does anyone use Another story, and does it feel like an offer rather than a feed?

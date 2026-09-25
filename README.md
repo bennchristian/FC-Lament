@@ -8,7 +8,7 @@ KNOWN is a private, in-the-moment Scripture experience for someone carrying some
 2. She meets someone in Scripture who carried something similar.
 3. She reads their own words.
 4. She notices what resonates.
-5. She chooses a gentle response: pray, sit with it, reflect, share with someone, or stop for now.
+5. She chooses a gentle response: pray, sit with it, reflect, or share with someone. To stop, she closes KNOWN.
 
 KNOWN offers language. She decides what fits.
 

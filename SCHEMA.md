@@ -47,7 +47,8 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 | `david` | Isolation | Psalm 142 | unseen (very strong), lonely (strong) | disconnected (moderate) |
 | `hagar` | Isolation | Genesis 16:1–14 | unseen (very strong), lonely (strong, with nuance) | disconnected (moderate) |
 
-**Routing:** image (S05a) → feeling (S05b, ring 2) → the people for that feeling on S06 → Esther picks the `pathwayId`.
+**Routing:** one or two images (S05a) → up to three descriptions (S05b), each carrying a hidden feeling tag → each story's score is the sum of its tag weights → S06 shows the best three (ties stay in) → Esther picks the `pathwayId`.
+- Her image and description choices live in memory only. They are never stored, and never saved with an unfinished moment.
 - If a coded build keeps the `UnfinishedMoment` record, `pathwayId` is set only once she has picked a person on S06.
 
 ### Feelings map (emotions wheel → pathway)
@@ -61,24 +62,26 @@ The four emotions come from Ekman's Atlas of Emotions, without Disgust. The feel
 | Sadness | Disappointed, Helpless, Grief, +Lonely, +Disconnected, +Homesick |
 | Enjoyment | Relieved, Peaceful, Joyful, Amazed, Excited, +Bittersweet |
 
-| Emotion › feeling | S06 shows | Status | Basis in Deb's research |
+| Emotion › feeling (hidden tag) | Tags story (weight) | Status | Basis in Deb's research |
 |---|---|---|---|
-| Fear › Uncertain | Ruth | mapped | uncertain: strong |
-| Enjoyment › Bittersweet | Ruth | mapped | bittersweet: moderate–strong |
-| Sadness › Homesick | Ruth | mapped (indirect) | homesick: indirect (flagged) |
-| Fear › Anxious | Nehemiah | mapped | concern for people back home: very strong |
-| Sadness › Helpless | Nehemiah | mapped | helpless at a distance: strong |
-| Sadness › Grief | Nehemiah | suggested | he mourns (not in the fit table) |
-| Sadness › Lonely | David, Hagar | mapped | lonely: strong for both |
-| Sadness › Disconnected | David, Hagar | mapped | disconnected: moderate for both |
-| The other 16 | S05p "Pathway coming" → All four | placeholder | — |
+| Fear › Uncertain | Ruth 4 | mapped | uncertain: strong |
+| Enjoyment › Bittersweet | Ruth 3 | mapped | bittersweet: moderate–strong |
+| Sadness › Homesick | Ruth 1 | mapped (indirect) | homesick: indirect (flagged) |
+| Fear › Anxious | Nehemiah 5 | mapped | concern for people back home: very strong |
+| Sadness › Helpless | Nehemiah 4 | mapped | helpless at a distance: strong |
+| Sadness › Grief | Nehemiah 1 | suggested | he mourns (not in the fit table) |
+| Sadness › Lonely | David 4, Hagar 4 | mapped | lonely: strong for both |
+| Sadness › Disconnected | David 2, Hagar 2 | mapped | disconnected: moderate for both |
+| The other 16 | none (if every tag scores 0 → All four) | placeholder | — |
+
+**Weights** follow Deb's fit ratings: very strong 5, strong 4, moderate–strong 3, moderate 2, indirect or suggested 1. TODO(Deb): confirm them.
 
 **Statuses:**
 - **mapped:** Deb's fit table supports it.
 - **suggested:** Claude's reading of her story notes. TODO(Deb): confirm.
 - **placeholder:** TODO(Deb): research a passage.
 
-The full list, with draft definitions, is in Figma: the "Feelings map" card and the S05b screens. The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
+The full list, with draft descriptions, is in Figma: the "Feelings map" card and the S05b screen (see the Preview frame). The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
 
 See PRD §5, research flags.
 

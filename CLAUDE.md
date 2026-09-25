@@ -20,7 +20,7 @@ Anything below that contradicts them is stale and should be fixed here, not ther
 
 ## 1. What this is
 
-FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo AI Hackathon. KNOWN is a private, in-the-moment Scripture experience for Esther, a displaced international Christian student. The flow is: name what she is carrying → meet a biblical person → read their words → recognize what resonates → choose a gentle response. If she goes through it with someone, a static companion card (C01–C13) on that person's phone walks them through the same ten stages without ever seeing her choices. It is currently in the design phase; the work lives in Figma, and there is no code yet.
+FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo AI Hackathon. KNOWN is a private, in-the-moment Scripture experience for Esther, a displaced international Christian student. The flow is: name what she is carrying (up to two unlabelled images, then up to three descriptions) → meet a biblical person → read their words → recognize what resonates → choose a gentle response. If she goes through it with someone, a static companion card (C01–C13) on that person's phone walks them through the same ten stages without ever seeing her choices. It is currently in the design phase; the work lives in Figma, and there is no code yet.
 
 ## 2. How to work on it
 
@@ -34,7 +34,7 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **`generate_diagram` only creates FigJam boards.** It cannot write into the Trauma-Group Design file.
 - **The Figma MCP's top-level page listing omitted a page** (User flow) that exists in the file. Look pages up by id or name before assuming one is missing.
 - **Overlay position is read-only in the Plugin API.** S18 is a full-screen scrim frame with the sheet pinned to the bottom, so the default centered overlay still reads as a bottom sheet.
-- **The Figma prototype can't remember where she stopped.** "Continue where I left off" always resumes at Ruth's S07, so don't read that as a bug. Its session variables (collection "Prototype state") are `pathway`, `feeling`, the `connect*` set for S10 and `offerAnother`. `ARCHITECTURE.md` §6 lists what each one does.
+- **The Figma prototype can't remember where she stopped.** "Continue where I left off" always resumes at Ruth's S07, so don't read that as a bug. Its session variables (collection "Prototype state") are `pathway`, the `connect*` set for S10, `offerAnother`, and the multi-select set for S05a/S05b/S06 (`img/*`, `feel/*`, `feelCount`, `justUnchecked`, `score/*`, `show/*`, `showSwap`). `ARCHITECTURE.md` §6 lists what each one does.
 - **Figma conditionals keep only if/else, and they can't be nested.** Multi-way routing ("Back to Respond") is four separate single-block CONDITIONAL actions chained in one reaction.
 - **Cloning a lane copies Deb's illustration images and any deleted instance children.** Run `resetOverrides()` on the Illustration instance, then set the caption again.
 - **A .webp uploaded as an image fill didn't render.** Convert it to PNG before `upload_assets`.
@@ -45,6 +45,9 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **The `plugin:figma` MCP server may ask for auth when the other Figma MCP server (`use_figma`) already works.** Check with ToolSearch before telling Ben the file is unreachable.
 - **The flow lines on the journey page are a locked vector group** ("Flow lines…"). If you move screens, redraw them; they don't follow frames. Newer screens (S09x, S19, OUT-7) have no line; only their prototype links exist.
 - **Setting `scopes` on a new variable in the "Prototype state" collection throws "Invalid scope"**, even `[]`. Leave the default.
+- **The S05a illustrations are absolute rectangles sitting on top of the old Image tiles,** so taps hit the image, not the tile. The checkbox hotspots are the transparent "Select · <emotion>" frames above each image.
+- **A Choice row's `Selected` variant can be bound to a boolean variable** with `instance.setProperties({Selected: {type:'VARIABLE_ALIAS', id}})`. That is how the S05b checkboxes work, with no extra frames.
+- **The live S05b looks empty on the canvas,** because its groups stay hidden until `img/*` is set. Review it on "S05b · Preview for review". If you edit S05b, redo the preview too.
 - **To screenshot S10's connection prompt, set the `connect*` variable defaults temporarily, then restore them.** Do it in its own `use_figma` call. Mixing it with reaction edits threw an "unexpected error" and rolled back the whole call.
 
 ## 4. Working with Ben
