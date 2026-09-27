@@ -36,6 +36,8 @@ Entry (ad link | community QR/link)
            any step → C12 She wants to stop | C13 If you're worried (TODO Kezia)
            [no data flows between the two phones]
   → S05a 1–2 unlabelled images (Ekman: fear | anger | sadness | enjoyment) → Continue
+       no words: "I don't have the words to explain how I feel" → S05w → S09w Psalm 13 | Psalm 77:3–4
+         → the other psalm | S06 All four | ✕   [no tag set, nothing recorded]
   → S05b up to 3 descriptions from those images (feeling words are hidden tags) → Continue   [user SELECTS both]
        none fit → S05n "Name it another way" (text never read) → S06 All four
        tags score 0 (no passage yet) → S06 All four
@@ -78,4 +80,5 @@ Exit at any step → Unfinished moment → save {step, pathwayId} | end without 
     - S05b groups are hidden on the canvas until the variables are set. "S05b · Preview for review" is a static, unlinked copy with two groups visible.
   - In the prototype, tapping a card moves straight to the next step. The mockup's radio-plus-Continue would need about 30 extra state frames. A coded build can use radio plus Continue. The exceptions are S05a/S05b (checkboxes plus *Continue*, above) and S10: tapping a card reveals the connection prompt, and *Next →* moves on. The card itself doesn't show as selected.
   - The S10 connection prompt runs on session variables: `connectPrompt` and `connectResponse` (text bound to them), and `connectShown`, `connectAnswered` and `connectNotReally` (visibility). *I'm ready →* on S09 resets them. Each S10 frame grows past 844px when the prompt is open, so the prototype scrolls.
+  - S09w · Psalm 13 is 1227px tall, so the prototype scrolls it. The no-words path uses no variables.
   - `offerAnother` hides S17's another-story link after one use. It resets only when the prototype restarts.

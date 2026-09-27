@@ -64,6 +64,11 @@ The adjacent personas guide later research and safety checks. They do not expand
   - **S05n, "Name it another way":** a sheet for when none of the descriptions fit. What she types is never read or used to route.
   - **Where she lands:** her tags score each story through the feelings map in `SCHEMA.md`, and **S06 · Best matches** shows the best three. If none of her tags has a passage yet, she goes straight to **S06 · All four**. (S05p, "Pathway coming", was removed Sept 25.)
   - Going back to S05a and pressing *Continue* again clears her S05b choices.
+  - **When there aren't words (S05w/S09w, added Sept 26, Ben):** for someone too overwhelmed to name anything. S05a has a quiet link under *Continue →*: *I don't have the words to explain how I feel*. It opens **S05w**, which asks for nothing and offers two psalms: **Psalm 13** ("How long, LORD?") and **Psalm 77:3–4** ("I was too troubled to speak."). **S09w** shows the passage, cited and word for word (NIV). From there she can read the other psalm, go on to *Meet someone in Scripture* (S06 · All four), or close with ✕. No feeling tag is set and nothing is recorded. The companion card's C02 guidance mentions it.
+    - TODO(Deb): Ben suggested both psalms. Confirm them, add or swap options, and confirm the translation and the "These are David's / Asaph's words to God" lines.
+    - TODO(Kezia): review S05w and S09w before testing. Someone in distress is the most likely person to take this path, and Psalm 13:3 reads "or I will sleep in death".
+    - TODO(Dorcas): voice review of the S05w and S09w copy (DRAFT by Claude; the S05a link wording is Ben's), and add the path to the SAT doc.
+    - TODO(Ben): S09w offers no Respond step, because Pray and Sit with it are built per pathway. Decide whether she should be able to pray or share from a psalm.
   - TODO(Dorcas): add the multi-select, no-label change to the SAT doc.
   - TODO(Kezia): review the descriptions for Dread, Panicked, Overwhelmed, Vengeful and Helpless, which were already flagged. Without the word beside them, the descriptions carry the whole meaning.
   - **Retired:**
@@ -72,7 +77,7 @@ The adjacent personas guide later research and safety checks. They do not expand
     - the six-word S05
     - the earlier mockup's five-screen See → Encounter flow
     - single-choice S05a/S05b, the four per-image S05b screens and the per-feeling S06 screens (Sept 25)
-- **Choose who to meet (S06):** KNOWN ranks the stories by her tags and shows up to three best matches (ties stay in). She picks the biblical person herself. *Show me different stories* swaps to the stories not shown. After S05n, S09x, S19 or tags with no passage, she chooses from all four. KNOWN never picks the person for her.
+- **Choose who to meet (S06):** KNOWN ranks the stories by her tags and shows up to three best matches (ties stay in). She picks the biblical person herself. *Show me different stories* swaps to the stories not shown. After S05n, S09w, S09x, S19 or tags with no passage, she chooses from all four. KNOWN never picks the person for her.
   - With four pathways, "a different set" is simply the other one or two stories. With a larger library it would be the next three by rank.
   - TODO(Deb): the ranking weights come from your fit ratings (very strong 5, strong 4, moderate–strong 3, moderate 2, indirect or suggested 1). Confirm them, or give an order you prefer.
 - **Third-person voice (changed Sept 25):** on S06–S09, KNOWN tells each person's story in the third person ("She stepped into a new life…"). The Sept 23 first-person voice was reverted so KNOWN never puts words in a biblical person's mouth. Quoted Scripture stays word for word, in quotation marks, with references.
@@ -179,6 +184,7 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(team): does the companion card help the trusted person accompany Esther without steering her answers?
 - TODO(team): do descriptions without feeling words feel less like a label, and are they still clear enough to choose from? Does picking up to three feel freeing or like more work?
 - TODO(team): does "This doesn't fit me" feel like permission rather than failure, and do testers find it on S09?
+- TODO(team): do overwhelmed testers find "I don't have the words to explain how I feel" on S05a, and does going straight to a psalm help, or does it skip the empathy the story steps give?
 - TODO(team): does "Does this connect with your moment?" feel like an invitation rather than a quiz?
 - TODO(team): does anyone use Another story, and does it feel like an offer rather than a feed?
 - TODO(team): do the faith-related hypotheses in Esther's empathy map reflect real users? Aaron's brief requires testing with real international students from Myanmar.

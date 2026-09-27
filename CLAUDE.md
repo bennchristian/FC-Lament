@@ -41,9 +41,10 @@ FC's Track 2 (Scripture Beyond the App, Activation lane) entry for the 2026 Gloo
 - **Ben's newer mockup screenshots aren't in the Figma file.** Search before assuming a frame exists. The companion lane was built from scratch at x=7000. Esther's invite is an option on S03, not a separate choice screen like the mockup's, because S02 keeps the SAT copy.
 - **One prototype link crosses phones:** OUT-6b's "Prototype only: see what Hannah receives →" jumps to C01. Its Send goes back to S03, so Esther's own flow stays intact.
 - **Companion copy must work whatever Esther picks.** The card can't know her feeling or pathway. The mockups named David and Psalm 142 and assumed "lonely"; those were removed.
-- **Crimson Pro Italic has no ⚑ glyph.** It renders as nothing in `KNOWN/Placeholder` text, so put Kezia flags in a note card instead.
+- **Neither Crimson Pro nor DM Sans has the ⚑ or ✕ glyph.** Both render as nothing, including in note cards, so write "KEZIA:" and "the X" instead.
+- **`frame.findOne(n => n.name === 'Content')` can match a node inside the TopBar instance.** Removing its children then throws "Removing this node is not allowed". Use `frame.children.find(...)` for a screen's own sections.
 - **The `plugin:figma` MCP server may ask for auth when the other Figma MCP server (`use_figma`) already works.** Check with ToolSearch before telling Ben the file is unreachable.
-- **The flow lines on the journey page are a locked vector group** ("Flow lines…"). If you move screens, redraw them; they don't follow frames. Newer screens (S09x, S19, OUT-7) have no line; only their prototype links exist.
+- **The flow lines on the journey page are a locked vector group** ("Flow lines…"). If you move screens, redraw them; they don't follow frames. Newer screens (S05w, S09w, S09x, S19, OUT-7) have no line; only their prototype links exist.
 - **Setting `scopes` on a new variable in the "Prototype state" collection throws "Invalid scope"**, even `[]`. Leave the default.
 - **The S05a illustrations are absolute rectangles sitting on top of the old Image tiles,** so taps hit the image, not the tile. The checkbox hotspots are the transparent "Select · <emotion>" frames above each image.
 - **A Choice row's `Selected` variant can be bound to a boolean variable** with `instance.setProperties({Selected: {type:'VARIABLE_ALIAS', id}})`. That is how the S05b checkboxes work, with no extra frames.

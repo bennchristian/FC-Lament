@@ -22,7 +22,7 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 - Written only when Esther chooses *Save this step for later*.
 - Deleted when she chooses *End without saving* or *Start a new moment*, or finishes the pathway.
 
-**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, which story she left through "This doesn't fit me" (S09x), her answer to "Does this connect with your moment?", whether she saved a prayer, or whether she took another story.
+**Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, which story she left through "This doesn't fit me" (S09x), her answer to "Does this connect with your moment?", whether she saved a prayer, whether she took another story, or whether she took the no-words psalm path (S05w).
 
 ## Static content
 
@@ -84,6 +84,17 @@ The four emotions come from Ekman's Atlas of Emotions, without Disgust. The feel
 The full list, with draft descriptions, is in Figma: the "Feelings map" card and the S05b screen (see the Preview frame). The retired third ring (50 feelings, with definitions) is kept in the "RETIRED" section of the journey page.
 
 See PRD §5, research flags.
+
+### `NoWordsPsalm` (static, read-only; S05w/S09w, added Sept 26)
+
+Psalms offered when she has no words for how she feels. They are not tagged, scored or linked to a pathway, and choosing one sets no `pathwayId`.
+
+| Passage | Attributed to | S05w line (quoted from the passage) | Status |
+|---|---|---|---|
+| Psalm 13 | David | "How long, LORD? Will you forget me forever?" | Suggested by Ben. TODO(Deb): confirm |
+| Psalm 77:3–4 | Asaph | "I was too troubled to speak." | Suggested by Ben. TODO(Deb): confirm |
+
+Fields: `reference`, `translation`, `attribution`, `previewLine`. The text comes from YouVersion Platform, like `PathwayContent.passage`.
 
 ### `CompanionCard` (static, read-only)
 
