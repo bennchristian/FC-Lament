@@ -24,6 +24,20 @@ PathwayContent (static, bundled)  ←─ pathwayId ─  UnfinishedMoment (device
 
 **Never stored:** selections' free text, Recognize "Something else" text, Reflect text, the share message, recipient, guide identity, timestamps of past moments, completion counts, the companion card's current step, whether a companion link was sent or opened, which story she left through "This doesn't fit me" (S09x), her answer to "Does this connect with your moment?", whether she saved a prayer, whether she took another story, or whether she took the no-words psalm path (S05w).
 
+### Test prototype storage (`prototype/KNOWN-test-prototype.html`, added Oct 1, Ben)
+
+The test prototype keeps one `localStorage` record, `known-test-v1`, on the tester's phone. It is a scope change from the rules above. Ben decided it on Oct 1 so the Moments feature can be tested.
+
+| Field | Type | Notes |
+|---|---|---|
+| `role` | `esther` · `companion` | Chosen on first open; changed in Settings |
+| `theme` | `system` · `light` · `dark` | Appearance |
+| `visits` | number | Times she tapped *Begin*. After 3, "Are you on your own right now?" is skipped |
+| `saved` | object or null | The `UnfinishedMoment` equivalent: `screen`, `pathway`, `psalm`, plus her picture and description choices so resume lands on the right step. Nothing she typed |
+| `moments[]` | list of `Moment` | Only what she ticked on *Before you go* |
+
+**`Moment`:** `id`, `ts`, `who` (person and passage, or psalm), and `items[]` of `{label, text}`. Items can be the Scripture, what resonated, her prayer, her reflection, or the message she sent. Each is kept only if ticked. She can remove a moment, and Settings → *Clear this phone* wipes the record between testers.
+
 ## Static content
 
 ### `PathwayContent` (authored by Deb, read-only)

@@ -114,6 +114,21 @@ The adjacent personas guide later research and safety checks. They do not expand
   - TODO(Deb): S19a is a placeholder. Research a second angle for each pathway's story, if one fits, or drop the option.
   - TODO(Dorcas): add S19, S12's save link and the S11 previews to the SAT doc, and review their voice.
 
+**Test prototype (Oct 1, Ben)**
+
+A single prototype for user testing, built from the best of the four earlier prototypes (see `evaluation/`). It lives at `prototype/KNOWN-test-prototype.html` and is published as an artifact (§11). Where it differs from the flow above, it wins for the test:
+- **Role on first open:** *I'm going through KNOWN* or *I'm here to accompany someone*. Each tester uses their own phone. The companion gets an 11-step static card that receives nothing from her phone.
+- **Home:** *Need help now?* top right, plus *Your moments · N*.
+- **"Are you on your own right now?"** is asked on her first 3 visits, then skipped. After that, home has a small *Going through this with someone?* link.
+- **Order:** Pictures → Closest description → Who to meet → Meet → Enter the Story → Scripture → **Take a breath** → **How did that resonate with you?** (replaces Recognize's heading; keeps "Does this connect with your moment?") → Respond. The psalm path goes Psalm → Take a breath → Respond.
+- **Respond:** Sit with it · Pray about it · Reflect · Reach out, as tiles. Tapping one opens its explanation and action on the same screen. Sit has an optional one-minute pause. Pray uses the prayer direction plus an optional *Make it your own* field and *Amen*.
+- **Ending:** *Finish for now* → *Before you go* (she ticks what to keep; nothing is ticked by default) → Thank you → optional another story. S19a is hidden.
+- **Moments:** what she kept, on her phone only. She can open or remove a moment. This reverses §6 and §7 for the test; see `RULES.md` rule 4 and `SCHEMA.md`.
+- **Help screen:** artifact 4's US-only wording. TODO(Kezia): review it before any real tester sees it. It is marked DRAFT on screen.
+- **Dropped:** "For your life now", the language picker and the Save-this-prayer link (keeping a prayer now goes through *Before you go*).
+- TODO(Dorcas): voice review of the new copy, including companion steps 2, 8, 10 and 11, which are marked DRAFT.
+- TODO(Kezia): review the companion card, which now refers to "them" with no names. C13 is still a placeholder for Kezia.
+
 **Content**
 - Four researched Scripture pathways, two per cluster (owner: Deb; research delivered Sept 23).
 - For each pathway, the research names which cluster words the passage genuinely supports, explains the biblical context, and flags words that should not be connected to that passage.
@@ -187,6 +202,10 @@ The adjacent personas guide later research and safety checks. They do not expand
 - TODO(team): do overwhelmed testers find "I don't have the words to explain how I feel" on S05a, and does going straight to a psalm help, or does it skip the empathy the story steps give?
 - TODO(team): does "Does this connect with your moment?" feel like an invitation rather than a quiz?
 - TODO(team): does anyone use Another story, and does it feel like an offer rather than a feed?
+- TODO(team): does the breath after Scripture help, or slow her down?
+- TODO(team): do testers open the Respond tiles to read what each involves, and does that make choosing easier?
+- TODO(team): does *Your moments* feel like a safe keepsake, or like a journal she's expected to keep up?
+- TODO(team): does the companion card's 11-step pace match what the user is doing on their phone?
 - TODO(team): do the faith-related hypotheses in Esther's empathy map reflect real users? Aaron's brief requires testing with real international students from Myanmar.
 
 ## 10. Deliverables and owners
@@ -209,3 +228,4 @@ The adjacent personas guide later research and safety checks. They do not expand
   - User flow: `node-id=31-2`
   - User journey (clickable prototype): page `25:3`, flows "Esther — community-guided journey", "On my own" and "Hannah — companion card" (C01–C13, the row at x=7000)
 - GitHub: https://github.com/bennchristian/FC-Lament
+- Test prototype (Oct 1): https://claude.ai/artifact/MEvnxAupiSzGa8KYtPd6ZZ, from `prototype/KNOWN-test-prototype.html`

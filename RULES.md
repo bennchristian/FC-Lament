@@ -16,6 +16,7 @@ TODO(team): no stack chosen yet (`ARCHITECTURE.md` §1). Add rules here once one
 2. **No auto-send.** Share hands an editable message to the OS; KNOWN never sends, schedules or notifies anyone.
 3. **Scripture is cited and never fabricated.** Every passage shows its reference and translation. Interpretation is never presented as Scripture, and no model paraphrases or chooses passages.
 4. **No retention metrics.** No streaks, counters, history, push re-engagement or analytics that optimize for return visits.
+   - Exception (Oct 1, Ben): the test prototype's *Your moments* keeps only what she ticks to keep, on her phone. The count on home shows how many moments she kept, never visits or streaks. The `visits` counter only decides when to skip "Are you on your own right now?" and is never shown.
 5. **Safety copy is gated.** Any safety, crisis or care language goes through Kezia's review before it enters a mockup or a build.
 6. **No account, no personal info.** Nothing requires a name, email, phone or identity, for Esther or for the guide.
 
